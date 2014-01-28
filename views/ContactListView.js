@@ -1,3 +1,3 @@
-var AddressListView = Backbone.View.extend({
+var ContactListView = Backbone.View.extend({
 	initialize: function() {}
 });
