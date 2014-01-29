@@ -13,11 +13,11 @@ require.config({
 			exports: 'Backbone'
 		},
 		'app' : {
-			deps: ['backbone']
+			// deps: ['backbone']
 		}
 	}
 });
 
-require(['app'], function(App) {
+require(['app','underscore', 'backbone'], function(App, _, Backbone) {
 	window.app = new App();
 })
