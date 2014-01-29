@@ -15,29 +15,8 @@
 	</div>
 	<!-- App dependencies -->
 	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
-	<script src="node_modules/underscore/underscore-min.js"></script>
-	<script src="node_modules/backbone/backbone-min.js"></script>
-	<!-- App files - models, views, etc -->
-	<script src="models/Contact.js"></script>
-	<script src="collections/ContactList.js"></script>
-	<script src="views/ContactListView.js"></script>
-	<script src="views/ContactListItem.js"></script>
-	<!-- The actual app file-->
-	<script src="app.js"></script>
+	<!-- We call in Require.js with a data-main attribute, which references our app-bootstrap file -->
+	<script src="node_modules/grunt-contrib-requirejs/node_modules/requirejs/require.js" data-main="main"></script>
 
-<!-- A template, used by the list item view -->
-<!-- Data properties are accessed in between <%= %> tags -->
-<script id="viewTemplate" type="application/template">
-<div class="panel panel-default">
-	<div class="panel-heading">
-		<h3 class="panel-title"><%= name %></h3>
-	</div>
-	<div class="panel-body">
-		<div class="tel"><%=number%></div>
-		<div class="email"><a href="mailto:<%=email%>"><%= email %></a></div>
-		<div class="url"><a href="<%=www%>"><%=www%></a></div>
-	</div>
-</div>
-</script>
 </body>
 </html>
